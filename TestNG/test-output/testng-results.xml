@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-05-01T06:41:11 EET" name="all" finished-at="2022-05-01T06:44:26 EET" duration-ms="194835">
+    <groups>
+    </groups>
+    <test started-at="2022-05-01T06:41:11 EET" name="Test" finished-at="2022-05-01T06:44:26 EET" duration-ms="194835">
+      <class name="banna.Remove_item">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:banna.Remove_item@485966cc]" started-at="2022-05-01T06:43:45 EET" name="beforeMethod" finished-at="2022-05-01T06:44:13 EET" duration-ms="27509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f()[pri:0, instance:banna.Remove_item@485966cc]" started-at="2022-05-01T06:44:13 EET" name="f" finished-at="2022-05-01T06:44:25 EET" duration-ms="12410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:banna.Remove_item@485966cc]" started-at="2022-05-01T06:44:25 EET" name="afterMethod" finished-at="2022-05-01T06:44:26 EET" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- banna.Remove_item -->
+      <class name="banna.promo_code">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:banna.promo_code@c88a337]" started-at="2022-05-01T06:42:31 EET" name="beforeMethod" finished-at="2022-05-01T06:42:48 EET" duration-ms="17910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f()[pri:0, instance:banna.promo_code@c88a337]" started-at="2022-05-01T06:42:48 EET" name="f" finished-at="2022-05-01T06:42:54 EET" duration-ms="5603" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:banna.promo_code@c88a337]" started-at="2022-05-01T06:42:54 EET" name="afterMethod" finished-at="2022-05-01T06:42:55 EET" duration-ms="584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- banna.promo_code -->
+      <class name="banna.ADD_TO_CART">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:banna.ADD_TO_CART@16a0ee18]" started-at="2022-05-01T06:41:11 EET" name="beforeMethod" finished-at="2022-05-01T06:41:28 EET" duration-ms="17561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f()[pri:0, instance:banna.ADD_TO_CART@16a0ee18]" started-at="2022-05-01T06:41:28 EET" name="f" finished-at="2022-05-01T06:42:26 EET" duration-ms="57953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:banna.ADD_TO_CART@16a0ee18]" started-at="2022-05-01T06:42:26 EET" name="afterMethod" finished-at="2022-05-01T06:42:31 EET" duration-ms="4249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- banna.ADD_TO_CART -->
+      <class name="banna.increment_item">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:banna.increment_item@5d0a1059]" started-at="2022-05-01T06:42:55 EET" name="beforeMethod" finished-at="2022-05-01T06:43:29 EET" duration-ms="34074" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="f()[pri:0, instance:banna.increment_item@5d0a1059]" started-at="2022-05-01T06:43:29 EET" name="f" finished-at="2022-05-01T06:43:41 EET" duration-ms="11917" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:banna.increment_item@5d0a1059]" started-at="2022-05-01T06:43:41 EET" name="afterMethod" finished-at="2022-05-01T06:43:45 EET" duration-ms="4471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- banna.increment_item -->
+    </test> <!-- Test -->
+  </suite> <!-- all -->
+</testng-results>

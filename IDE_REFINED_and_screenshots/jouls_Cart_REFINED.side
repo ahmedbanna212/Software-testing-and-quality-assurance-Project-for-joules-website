@@ -1,0 +1,601 @@
+{
+  "id": "49c64cec-1fd4-4a8c-997a-130a07a7b0f1",
+  "version": "2.0",
+  "name": "jouls_Cart_REFINED",
+  "url": "https://www.joules.com",
+  "tests": [{
+    "id": "8165d154-e7c8-4f07-b35a-f0f47c40c892",
+    "name": "1_Cart_addTest",
+    "commands": [{
+      "id": "b176e44f-f562-4eaa-8780-8a3298f2c8a2",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a08dfb42-ac90-4d10-97fc-8ffed05980a5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5be0c655-1624-44f2-9a05-1e02d8cc94df",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=MEN",
+      "targets": [
+        ["linkText=MEN", "linkText"],
+        ["css=.open > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'MEN')])[6]", "xpath:link"],
+        ["xpath=//div[@id='mega-nav']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/Mens-Clothing?mmid=Men-_-TopNav')])[3]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e95b6ae-ebb1-4ed0-858e-2ce063883498",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Polo Shirts",
+      "targets": [
+        ["linkText=Polo Shirts", "linkText"],
+        ["css=.focused", "css:finder"],
+        ["xpath=(//a[contains(text(),'Polo Shirts')])[3]", "xpath:link"],
+        ["xpath=//div[@id='mega-nav']/ul/li[3]/ul/div/div/div/div[2]/li/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/Mens-Clothing/Polo-Shirts?mmid=Men-_-Clothing-_-PoloShirts')])[2]", "xpath:href"],
+        ["xpath=//li[3]/ul/div/div/div/div[2]/li/ul/li[7]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d44b0b70-e45f-4744-b301-7da3c1e51a80",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Woody Slim Fit Polo Shirt",
+      "targets": [
+        ["linkText=Woody Slim Fit Polo Shirt", "linkText"],
+        ["css=.l-ProductGrid__item:nth-child(1) > .l-ProductGrid__item-name > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Woody Slim Fit Polo Shirt')]", "xpath:link"],
+        ["xpath=//section[@id='new-product-grid']/section/article/h2/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/Men/Clothing/Woody/Slim-Fit-Polo-Shirt?size=L&id=218064|DRASPBR|L')])[2]", "xpath:href"],
+        ["xpath=//h2/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Woody Slim Fit Polo Shirt')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4a44046d-bae1-454d-9f25-ee4563faf77e",
+      "comment": "",
+      "command": "click",
+      "target": "id=size",
+      "targets": [
+        ["id=size", "id"],
+        ["name=size", "name"],
+        ["css=#size", "css:finder"],
+        ["xpath=//select[@id='size']", "xpath:attributes"],
+        ["xpath=//div[@id='product-variant-selectors']/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cb897b7-9787-4904-95df-4ed93beac82e",
+      "comment": "",
+      "command": "select",
+      "target": "id=size",
+      "targets": [],
+      "value": "label=XL"
+    }, {
+      "id": "0de84b0e-813d-4c63-ab01-51024ec6538b",
+      "comment": "",
+      "command": "assertSelectedValue",
+      "target": "id=size",
+      "targets": [
+        ["id=size", "id"],
+        ["name=size", "name"],
+        ["css=#size", "css:finder"],
+        ["xpath=//select[@id='size']", "xpath:attributes"],
+        ["xpath=//div[@id='product-variant-selectors']/div[2]/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "XL"
+    }, {
+      "id": "393e747a-ed01-4460-92ec-8a16fafb1877",
+      "comment": "",
+      "command": "click",
+      "target": "css=.has-wishlist > .\\[",
+      "targets": [
+        ["css=.has-wishlist > .\\[", "css:finder"],
+        ["xpath=//div[@id='product-variant-selectors']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to my bag')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc5b399d-fdac-4891-a990-f446aa235dc6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.c-ColourSelector__selected",
+      "targets": [
+        ["css=.c-ColourSelector__selected", "css:finder"],
+        ["xpath=//div[@id='product-variant-selectors']/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div", "xpath:position"]
+      ],
+      "value": "DEEP RASPBERRY"
+    }, {
+      "id": "0e98ce87-04e6-499b-8d9b-00281c2beb2f",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "linkText=Go to shopping bag",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "1e88623b-468e-434e-912a-4b3c1806e248",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Go to shopping bag",
+      "targets": [
+        ["linkText=Go to shopping bag", "linkText"],
+        ["css=li > .c-Button--action-primary", "css:finder"],
+        ["xpath=//a[contains(text(),'Go to shopping bag')]", "xpath:link"],
+        ["xpath=//div[@id='component-product-page']/div[2]/div/div/ul/li[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/cart')])[3]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/div/ul/li[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Go to shopping bag')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "19976ebe-d7ee-49ff-84d8-1c12484d499f",
+      "comment": "",
+      "command": "click",
+      "target": "id=page",
+      "targets": [
+        ["id=page", "id"],
+        ["css=#page", "css:finder"],
+        ["xpath=//div[@id='page']", "xpath:attributes"],
+        ["xpath=//body/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d19d2ec6-1476-4d11-af3c-730d771b22bd",
+      "comment": "",
+      "command": "assertValue",
+      "target": "//*[@id=\"quantity0\"]",
+      "targets": [],
+      "value": "1"
+    }, {
+      "id": "e60b4dfb-bf74-4a36-a1a0-96ba7e129d40",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.col-md-12",
+      "targets": [
+        ["css=.col-md-12", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[3]/div/div[2]/div[3]/div[2]/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div[2]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37484dbf-11bf-4cb0-848b-82774a1f7d5a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-xs-12:nth-child(6) > .basket-details-value",
+      "targets": [],
+      "value": "XL"
+    }, {
+      "id": "0b1a2b2a-aac1-4917-893c-cf840dbf7b7e",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.col-xs-12:nth-child(7) > .basket-details-value",
+      "targets": [
+        ["css=.col-xs-12:nth-child(7) > .basket-details-value", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[3]/div/div[2]/div[3]/div[2]/div/div/div[3]/span[2]", "xpath:idRelative"],
+        ["xpath=//div[3]/span[2]", "xpath:position"]
+      ],
+      "value": "DEEP RASPBERRY"
+    }]
+  }, {
+    "id": "09a403e8-d388-47a7-a416-a0ebe7bebe36",
+    "name": "5_CART_remove",
+    "commands": [{
+      "id": "a866d709-475d-4244-b74c-7c0bcca0d170",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d68b3ef2-cff8-42d6-aad6-fb5f2b31c93b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b2dec399-8615-4315-af5c-0719d783278d",
+      "comment": "",
+      "command": "click",
+      "target": "id=minicart_price_field",
+      "targets": [
+        ["id=minicart_price_field", "id"],
+        ["css=#minicart_price_field", "css:finder"],
+        ["xpath=//span[@id='minicart_price_field']", "xpath:attributes"],
+        ["xpath=//div[@id='page']/header/div/div/nav/div[2]/ul/li[4]/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//a/span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'£29.95')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1259834a-2aa1-4605-86e2-bca7f813af96",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.shopping-basket-item",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d577b08-677c-4ed1-b3ac-0ac4dd3d634b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remove",
+      "targets": [
+        ["linkText=Remove", "linkText"],
+        ["css=.hidden-xs > #RemoveProduct_0", "css:finder"],
+        ["xpath=(//a[contains(text(),'Remove')])[2]", "xpath:link"],
+        ["xpath=(//a[@id='RemoveProduct_0'])[2]", "xpath:attributes"],
+        ["xpath=//div[@id='page']/div[4]/div[3]/div/div[3]/div[3]/div[2]/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[91]", "xpath:href"],
+        ["xpath=//div[3]/div[2]/div/div[2]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "21cdd7af-58e9-45a9-bdcd-e3fea1f77ecf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.message-info-txt",
+      "targets": [
+        ["css=.message-info-txt", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[2]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[4]/div[2]/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Product has been removed from your cart.')]", "xpath:innerText"]
+      ],
+      "value": "Product has been removed from your cart."
+    }, {
+      "id": "6e388957-d7f4-4353-87c6-12a772981c18",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.shopping-basket-item",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ba6901e-1b13-4ed8-b2ac-8a7bc3f0588f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.empty-msg",
+      "targets": [],
+      "value": "Your shopping bag is empty"
+    }]
+  }, {
+    "id": "63c86c70-b76c-4cb0-932e-ac3544a90d64",
+    "name": "2_jouls_Cart_promotion_code",
+    "commands": [{
+      "id": "2f2a9657-ca7d-42b2-bf3f-b3afeb9e9034",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e592f235-6a07-4f49-b0e7-36009f5d39ac",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "45ee0422-6779-44e1-8803-eecf2fa57e3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=minicart_price_field",
+      "targets": [
+        ["id=minicart_price_field", "id"],
+        ["css=#minicart_price_field", "css:finder"],
+        ["xpath=//span[@id='minicart_price_field']", "xpath:attributes"],
+        ["xpath=//div[@id='page']/header/div/div/nav/div[2]/ul/li[4]/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//a/span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'£29.95')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b28aebb-e69f-4154-8fa9-3f32e4598d9f",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.subtotal-value",
+      "targets": [
+        ["css=.subtotal-value", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[3]/div/div[2]/div[3]/div[2]/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span[2]", "xpath:position"]
+      ],
+      "value": "Price"
+    }, {
+      "id": "99e269dc-7f66-4080-a05e-dd655b825865",
+      "comment": "",
+      "command": "echo",
+      "target": "${Price}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "708f348d-16ed-406c-970d-fa4d27eb6850",
+      "comment": "",
+      "command": "click",
+      "target": "css=.outer #apply\\.voucher\\.code",
+      "targets": [
+        ["css=.outer #apply\\.voucher\\.code", "css:finder"],
+        ["xpath=(//input[@id='apply.voucher.code'])[2]", "xpath:attributes"],
+        ["xpath=(//form[@id='voucher.apply']/div/div/div/input)[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d439003d-0095-4433-abf6-cb4f05562b68",
+      "comment": "",
+      "command": "type",
+      "target": "css=.outer #apply\\.voucher\\.code",
+      "targets": [
+        ["css=.outer #apply\\.voucher\\.code", "css:finder"],
+        ["xpath=(//input[@id='apply.voucher.code'])[2]", "xpath:attributes"],
+        ["xpath=(//form[@id='voucher.apply']/div/div/div/input)[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/form/div/div/div/input", "xpath:position"]
+      ],
+      "value": "'hhbh8136749816"
+    }, {
+      "id": "cb42f34d-5cf6-488d-96ed-97291c9238bb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.outer #voucher\\.apply .joules-btn",
+      "targets": [
+        ["css=.outer #voucher\\.apply .joules-btn", "css:finder"],
+        ["xpath=(//button[@type='submit'])[2]", "xpath:attributes"],
+        ["xpath=(//form[@id='voucher.apply']/div/span/button)[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/form/div/span/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1bfb9cd1-12ca-49f7-8367-d9b391026352",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.message-error",
+      "targets": [
+        ["css=.message-error", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[4]/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86d5c9e5-df5a-477a-b4f6-d158c91fa9f7",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.message-error-txt",
+      "targets": [
+        ["css=.message-error-txt", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'The offer code which you have entered has not been recognised, please check that you have entered it correctly')]", "xpath:innerText"]
+      ],
+      "value": "The offer code which you have entered has not been recognised, please check that you have entered it correctly"
+    }, {
+      "id": "085c234e-b40d-462d-a639-545cd6ece8ca",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.subtotal-value",
+      "targets": [],
+      "value": "${Price}"
+    }]
+  }, {
+    "id": "0fd71cbc-5b57-490c-acb0-283c7fedd45d",
+    "name": "3_Cart__inc",
+    "commands": [{
+      "id": "8f512ff3-0598-4111-a342-902991f7a225",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "54a71676-13b0-43a3-9e0f-c82b303509d7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "51746a71-6807-4919-b0cf-18757bd900dd",
+      "comment": "",
+      "command": "click",
+      "target": "id=minicart_price_field",
+      "targets": [
+        ["id=minicart_price_field", "id"],
+        ["css=#minicart_price_field", "css:finder"],
+        ["xpath=//span[@id='minicart_price_field']", "xpath:attributes"],
+        ["xpath=//div[@id='page']/header/div/div/nav/div[2]/ul/li[4]/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//a/span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'£29.95')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d704398-7cfa-45d8-afab-80a7d5de6ea4",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.subtotal-value",
+      "targets": [
+        ["css=.subtotal-value", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[5]/div/div[2]/div[3]/div[2]/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span[2]", "xpath:position"]
+      ],
+      "value": "price"
+    }, {
+      "id": "647f5b58-0339-4f41-878d-004f9c18bfc5",
+      "comment": "",
+      "command": "echo",
+      "target": "",
+      "targets": [],
+      "value": "${price}"
+    }, {
+      "id": "14ee2a13-4f28-4cb2-8ce3-03b3d15b4735",
+      "comment": "",
+      "command": "click",
+      "target": "css=.qtyplus",
+      "targets": [
+        ["css=.qtyplus", "css:finder"],
+        ["xpath=//input[@value='+']", "xpath:attributes"],
+        ["xpath=//form[@id='updateCartForm0']/input[6]", "xpath:idRelative"],
+        ["xpath=//input[6]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "58349609-9e3c-46f8-84ff-837c8c530d4d",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.message-correct",
+      "targets": [
+        ["css=.message-correct", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "380b1dcd-ad61-4944-8e8d-4bf705d15beb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.message-info-txt",
+      "targets": [
+        ["css=.message-info-txt", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[2]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Product quantity has been updated.')]", "xpath:innerText"]
+      ],
+      "value": "Product quantity has been updated."
+    }, {
+      "id": "0c53e681-cdf8-4d4f-af93-8d8b17eb6bfa",
+      "comment": "",
+      "command": "assertValue",
+      "target": "//*[@id=\"quantity0\"]",
+      "targets": [],
+      "value": "2"
+    }, {
+      "id": "2cf8a9d1-374f-433a-b615-f0ad16c33422",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.subtotal-value",
+      "targets": [
+        ["css=.subtotal-value", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[5]/div/div[2]/div[3]/div[2]/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span[2]", "xpath:position"]
+      ],
+      "value": "${price}"
+    }]
+  }, {
+    "id": "77aec3ab-49c7-4e62-ab61-07d516ba4ba5",
+    "name": "4_Cart_quntity_dec",
+    "commands": [{
+      "id": "47e7dec9-7c4b-4662-b87f-dcea1db45796",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "066f41c7-cefd-46f9-813c-f0f81630e1dd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1920x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6db8bbd-6bbb-45ab-9923-c1247ceea6e4",
+      "comment": "",
+      "command": "click",
+      "target": "id=minicart_price_field",
+      "targets": [
+        ["id=minicart_price_field", "id"],
+        ["css=#minicart_price_field", "css:finder"],
+        ["xpath=//span[@id='minicart_price_field']", "xpath:attributes"],
+        ["xpath=//div[@id='page']/header/div/div/nav/div[2]/ul/li[4]/div/div/a/span[3]", "xpath:idRelative"],
+        ["xpath=//a/span[3]", "xpath:position"],
+        ["xpath=//span[contains(.,'£59.90')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4108a509-674d-4407-9ff6-e669d022128d",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.subtotal-value",
+      "targets": [
+        ["css=.subtotal-value", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[3]/div/div[2]/div[3]/div[2]/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span[2]", "xpath:position"]
+      ],
+      "value": "price"
+    }, {
+      "id": "280d3610-137c-483f-b494-5f5c049405e6",
+      "comment": "",
+      "command": "echo",
+      "target": "",
+      "targets": [],
+      "value": "${price}"
+    }, {
+      "id": "edec57e0-8d51-4a0e-b60d-54eb38bd2824",
+      "comment": "",
+      "command": "click",
+      "target": "css=.qtyminus",
+      "targets": [
+        ["css=.qtyminus", "css:finder"],
+        ["xpath=//input[@value='-']", "xpath:attributes"],
+        ["xpath=//form[@id='updateCartForm0']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c8ef7c2-3354-4ec9-9ab8-009cefe176b0",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.message-correct",
+      "targets": [
+        ["css=.message-correct", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "6e0a6206-6a0f-4670-8fe9-9cbc7ccc783b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.message-info-txt",
+      "targets": [
+        ["css=.message-info-txt", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[2]/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Product quantity has been updated.')]", "xpath:innerText"]
+      ],
+      "value": "Product quantity has been updated."
+    }, {
+      "id": "4349edd7-bffd-4936-b741-70e493b566c8",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.subtotal-value",
+      "targets": [
+        ["css=.subtotal-value", "css:finder"],
+        ["xpath=//div[@id='page']/div[4]/div[5]/div/div[2]/div[3]/div[2]/div/div/span[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/span[2]", "xpath:position"]
+      ],
+      "value": "${price}"
+    }]
+  }],
+  "suites": [{
+    "id": "9e250bac-1f2d-460a-b1f8-7786e4974829",
+    "name": "jOULS_CART",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["8165d154-e7c8-4f07-b35a-f0f47c40c892", "0fd71cbc-5b57-490c-acb0-283c7fedd45d", "77aec3ab-49c7-4e62-ab61-07d516ba4ba5", "09a403e8-d388-47a7-a416-a0ebe7bebe36"]
+  }],
+  "urls": ["https://www.joules.com/"],
+  "plugins": []
+}
